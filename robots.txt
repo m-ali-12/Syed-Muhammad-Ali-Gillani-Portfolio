@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://m-ali-gillani.dev/sitemap.xml

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 210" width="500" height="210">
+  <rect width="500" height="210" fill="#f5f3ef" rx="6"/>
+  <path d="M250 22 L286 38 L286 88 Q286 126 250 142 Q214 126 214 88 L214 38 Z" fill="none" stroke="#1a2a20" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M250 32 L277 46 L277 87 Q277 118 250 132 Q223 118 223 87 L223 46 Z" fill="none" stroke="#1a2a20" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="250" y="108" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="54" font-weight="700" fill="#1a2a20">G</text>
+  <text x="250" y="170" text-anchor="middle" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="34" font-style="italic" font-weight="400" fill="#1a5c3a" letter-spacing="0.5">Syed Muhammad Ali Gillani</text>
+  <line x1="30" y1="180" x2="175" y2="180" stroke="#1a5c3a" stroke-width="1"/>
+  <polygon points="250,174 256,180 250,186 244,180" fill="#1a5c3a"/>
+  <line x1="325" y1="180" x2="470" y2="180" stroke="#1a5c3a" stroke-width="1"/>
+</svg>

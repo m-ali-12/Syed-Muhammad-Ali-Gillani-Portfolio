@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Syed Muhammad Ali Gillani | Full Stack Developer, CEH Certified, Arid University Software Engineering</title>
+  <meta name="description" content="About Syed Muhammad Ali Gillani — Full Stack Developer (MERN + PHP Laravel), CEH Certified by Boston Institute of Analytics, Computer Network Assistant NAVTTAC, Software Engineering student at Arid University 2022-2026. 2+ years freelance experience." />
+  <meta name="keywords" content="Syed Muhammad Ali Gillani About, Ali Gillani developer bio, Full Stack Developer Arid University, CEH Certified Pakistan, Boston Institute Analytics CEH, NAVTTAC Computer Network, Honhaar Jawan Program, UET Lahore MERN, Software Engineering Pakistan, Freelance Developer Pakistan, MERN PHP Developer bio" />
+    <meta property="og:image" content="https://m-ali-gillani.dev/og-image.png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Syed Muhammad Ali Gillani" />
+  <link rel="canonical" href="https://m-ali-gillani.dev/pages/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .about-wrap { padding: 80px 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 72px; align-items: start; }
+    .about-left { position: sticky; top: 90px; }
+    .av-box {
+      width: 100%; aspect-ratio: 4/5; background: var(--bg-3);
+      border-radius: var(--r-lg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; position: relative;
+    }
+    .av-box::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 50%, rgba(0,229,160,0.04)); }
+    .av-box-text { font-family: var(--font-h); font-size: 4.5rem; font-weight: 800; color: rgba(0,229,160,0.18); letter-spacing: -0.05em; }
+    .badge-stack { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    .a-badge {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 13px 16px;
+      transition: border-color var(--t);
+    }
+    .a-badge:hover { border-color: var(--border-h); }
+    .ab-ic { font-size: 1.2rem; }
+    .ab-t { font-size: 0.84rem; font-weight: 600; color: var(--text); }
+    .ab-s { font-size: 0.73rem; color: var(--text-muted); }
+
+    .about-right h2 { font-family: var(--font-h); font-size: clamp(1.9rem,4vw,2.9rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 22px; }
+    .about-right h2 span { color: var(--accent); }
+    .about-right p { font-size: 1.0rem; color: var(--text-body); line-height: 1.8; margin-bottom: 18px; }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 32px 0; }
+    .info-item label { font-family: var(--font-m); font-size: 0.69rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 3px; }
+    .info-item span { font-size: 0.88rem; color: var(--text); font-weight: 500; }
+    .cert-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .chip { display: flex; align-items: center; gap: 6px; background: rgba(0,229,160,0.06); border: 1px solid rgba(0,229,160,0.18); border-radius: 8px; padding: 9px 14px; font-family: var(--font-m); font-size: 0.74rem; color: var(--accent); font-weight: 500; }
+    .about-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+
+    /* EDUCATION TIMELINE */
+    .edu-section { padding: 0 0 80px; }
+    .edu-section h3 { font-family: var(--font-h); font-size: 1.5rem; font-weight: 700; margin-bottom: 30px; }
+    .timeline { display: flex; flex-direction: column; gap: 0; position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 1px; background: var(--border); }
+    .tl-item { display: flex; gap: 26px; padding-bottom: 32px; position: relative; }
+    .tl-dot { width: 38px; height: 38px; background: var(--bg-3); border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; z-index: 1; }
+    .tl-date { font-family: var(--font-m); font-size: 0.72rem; color: var(--accent); margin-bottom: 4px; }
+    .tl-title { font-family: var(--font-h); font-size: 0.97rem; font-weight: 700; margin-bottom: 2px; }
+    .tl-place { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px; }
+    .tl-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+    @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } .about-left { position: static; } .av-box { max-width: 260px; } }
+    @media (max-width: 640px) { .info-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/logo-nav-dark.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-dark" /><img src="../images/logo-nav-light.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-light" /></a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="icon-dark">🌙</span><span class="icon-light">☀️</span></button>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <span class="s-tag">Get to Know Me</span>
+    <h1>About <em>Me</em></h1>
+    <p>Passionate developer, ethical hacker, and network specialist — building the web securely.</p>
+  </div></div>
+</section>
+
+<main class="about-wrap">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-left fi">
+        <div class="av-box"><img src="../images/ali-photo.jpg" alt="Syed Muhammad Ali Gillani" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:var(--r-lg);" /></div>
+        <div class="badge-stack">
+          <div class="a-badge"><span class="ab-ic">🎓</span><div><div class="ab-t">BS Software Engineering</div><div class="ab-s">Arid University · 2022 – 2026</div></div></div>
+          <div class="a-badge"><span class="ab-ic">🏅</span><div><div class="ab-t">CEH Certified</div><div class="ab-s">Boston Institute of Analytics</div></div></div>
+          <div class="a-badge"><span class="ab-ic">🌐</span><div><div class="ab-t">Computer Network Assistant</div><div class="ab-s">NAVTTAC, Pakpattan</div></div></div>
+          <div class="a-badge"><span class="ab-ic">📍</span><div><div class="ab-t">Pakistan</div><div class="ab-s">Available Worldwide (Remote)</div></div></div>
+        </div>
+      </div>
+
+      <div class="about-right fi">
+        <h2>I Build Things for the <span>Web & Secure Them</span> Too</h2>
+        <p>Hi! I'm Syed Muhammad Ali Gillani, a Full Stack Web Developer and Certified Ethical Hacker from Pakistan. I specialize in building end-to-end web applications using the MERN stack and PHP/Laravel while ensuring they are bulletproof against cyber threats.</p>
+        <p>Currently pursuing my BS in Software Engineering at Arid University (2022–2026), I combine strong academic foundations with real-world project experience. My CEH certification from Boston Institute of Analytics and network training from NAVTTAC add a security-first mindset to everything I build.</p>
+        <p>From a moving platform serving US clients to petroleum management systems, I've delivered diverse, production-grade applications that solve real problems.</p>
+
+        <div class="info-grid">
+          <div class="info-item"><label>Full Name</label><span>Syed Muhammad Ali Gillani</span></div>
+          <div class="info-item"><label>Degree</label><span>BS Software Engineering</span></div>
+          <div class="info-item"><label>University</label><span>Arid University (2022–2026)</span></div>
+          <div class="info-item"><label>Availability</label><span>Open to Work ✅</span></div>
+          <div class="info-item"><label>WhatsApp</label><span>+92 302 5300069</span></div>
+          <div class="info-item"><label>Languages</label><span>Urdu · English</span></div>
+        </div>
+
+        <div class="cert-chips">
+          <div class="chip">🏅 CEH — Boston Institute of Analytics</div>
+          <div class="chip">⚛️ MERN Stack — UET Lahore</div>
+          <div class="chip">🌐 Network Assistant — NAVTTAC Pakpattan</div>
+          <div class="chip">📶 WiFi Security & Hacking — Honhaar Jawan</div>
+          <div class="chip">☁️ AWS Advanced Networking — Honhaar Jawan</div>
+        </div>
+
+        <div class="about-actions">
+          <a href="contact.html" class="btn-p">Hire Me <span class="arr">→</span></a>
+          <a href="https://wa.me/923025300069" target="_blank" rel="noopener" class="btn-o">💬 WhatsApp</a>
+          <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="btn-o">GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION TIMELINE -->
+    <div class="edu-section fi">
+      <h3>Education & Journey</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">📚</div>
+          <div>
+            <div class="tl-date">2017 – 2019</div>
+            <div class="tl-title">Matriculation (SSC)</div>
+            <div class="tl-place">Board of Secondary Education, Pakistan</div>
+            <div class="tl-desc">Completed Secondary School Certificate with strong foundation in Mathematics and Sciences.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">📐</div>
+          <div>
+            <div class="tl-date">2019 – 2021</div>
+            <div class="tl-title">F.Sc. Pre-Engineering (HSSC)</div>
+            <div class="tl-place">Board of Intermediate Education, Pakistan</div>
+            <div class="tl-desc">Higher Secondary Certificate in Pre-Engineering — Physics, Chemistry, Mathematics. Built strong analytical and problem-solving skills.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">🎓</div>
+          <div>
+            <div class="tl-date">2022 – 2026 (Ongoing)</div>
+            <div class="tl-title">BS Software Engineering</div>
+            <div class="tl-place">University of Arid Agriculture Rawalpindi (Arid University)</div>
+            <div class="tl-desc">Currently in 4th year. Studying Software Engineering, Data Structures, DBMS, Computer Networks, Web Technologies, and Software Project Management.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">🏅</div>
+          <div>
+            <div class="tl-date">Certification</div>
+            <div class="tl-title">Certified Ethical Hacker (CEH)</div>
+            <div class="tl-place">Boston Institute of Analytics</div>
+            <div class="tl-desc">Penetration testing, vulnerability assessment, OWASP Top 10, Kali Linux, Metasploit, web application security and ethical hacking methodologies.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">⚛️</div>
+          <div>
+            <div class="tl-date">Certification</div>
+            <div class="tl-title">MERN Stack Development</div>
+            <div class="tl-place">UET Lahore</div>
+            <div class="tl-desc">React.js, Node.js, Express.js, MongoDB, JWT authentication, REST APIs, and full-stack deployment on cloud platforms.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">🌐</div>
+          <div>
+            <div class="tl-date">Certification</div>
+            <div class="tl-title">Computer Network Assistant</div>
+            <div class="tl-place">NAVTTAC, Pakpattan</div>
+            <div class="tl-desc">Network design, TCP/IP, VLAN, VPN, router & switch configuration, firewall management and network security fundamentals.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">📶</div>
+          <div>
+            <div class="tl-date">Certification</div>
+            <div class="tl-title">WiFi Security & Hacking Techniques</div>
+            <div class="tl-place">Honhaar Jawan Program</div>
+            <div class="tl-desc">WPA2/WPA3 vulnerabilities, wireless penetration testing, rogue access points, and ethical WiFi security auditing.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">☁️</div>
+          <div>
+            <div class="tl-date">Certification</div>
+            <div class="tl-title">AWS Certified Advanced Networking</div>
+            <div class="tl-place">Honhaar Jawan Program</div>
+            <div class="tl-desc">AWS VPC design, Direct Connect, Transit Gateway, Route 53, CloudFront, AWS WAF, Shield, and cloud security best practices.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-top">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/smag-logo-full.svg" alt="Syed Muhammad Ali Gillani" class="footer-logo-svg" /></a><p>Full Stack Developer · CEH Certified · Network Specialist</p></div>
+    <div class="footer-links">
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://github.com/m-ali-12" target="_blank">GitHub</a></li><li><a href="https://www.linkedin.com/in/m-ali-gillani/" target="_blank">LinkedIn</a></li><li><a href="https://wa.me/923025300069" target="_blank">WhatsApp</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Syed Muhammad Ali Gillani. All rights reserved.</p><p>Built with passion 💚</p></div>
+</div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

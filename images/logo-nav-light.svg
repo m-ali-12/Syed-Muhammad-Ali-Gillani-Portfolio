@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 52" width="380" height="52">
+  <path d="M26 4 L44 11 L44 30 Q44 42 26 48 Q8 42 8 30 L8 11 Z" fill="none" stroke="#1a2a20" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M26 9 L40 15 L40 30 Q40 39 26 44 Q12 39 12 30 L12 15 Z" fill="none" stroke="#1a2a20" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="26" y="34" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="20" font-weight="700" fill="#1a2a20">G</text>
+  <text x="58" y="32" text-anchor="start" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="18" font-style="italic" font-weight="400" fill="#1a5c3a" letter-spacing="0.3">Syed Muhammad Ali Gillani</text>
+</svg>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Syed Muhammad Ali Gillani — MERN, PHP Laravel, CEH Certified, AWS & Network Expert</title>
+  <meta name="description" content="Technical skills of Syed Muhammad Ali Gillani: React.js, Node.js, MongoDB, PHP Laravel, Next.js, CEH Ethical Hacking, Penetration Testing, OWASP, Computer Networking, WiFi Security, AWS Advanced Networking. 5 professional certifications." />
+  <meta name="keywords" content="Syed Muhammad Ali Gillani Skills, MERN Stack Skills, React.js skills, Node.js skills, PHP Laravel skills, CEH certified skills, Ethical Hacking skills, Penetration Testing skills, OWASP Pakistan, WiFi Security skills, Computer Network skills, AWS Networking skills, Full Stack skills Pakistan, JavaScript skills, MongoDB skills, Next.js skills, Tailwind CSS, Docker skills, MySQL skills" />
+    <meta property="og:image" content="https://m-ali-gillani.dev/og-image.png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Syed Muhammad Ali Gillani" />
+  <link rel="canonical" href="https://m-ali-gillani.dev/pages/skills.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .skills-main { padding: 80px 0; }
+    .sk-categories { display: flex; flex-direction: column; gap: 72px; }
+    .sk-cat-title {
+      font-family: var(--font-h); font-size: 1.5rem; font-weight: 700; margin-bottom: 28px;
+      display: flex; align-items: center; gap: 12px; color: var(--text);
+    }
+    .sk-cat-title::after { content:''; flex:1; height:1px; background:var(--border); }
+    .sk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .sk-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 20px 18px;
+      transition: all var(--t); position: relative; overflow: hidden;
+    }
+    .sk-card:hover { border-color: var(--border-h); transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.28); }
+    .sk-card::after { content:''; position:absolute; bottom:0; left:0; height:2px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform 0.4s ease; }
+    .sk-card:hover::after { transform:scaleX(1); }
+    .sk-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .sk-name { font-family: var(--font-h); font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+    .sk-bar { height: 4px; background: var(--bg-3); border-radius: 2px; overflow: hidden; margin-bottom: 6px; }
+    .sk-fill { height: 100%; background: linear-gradient(to right, var(--accent), var(--accent-2)); border-radius: 2px; transition: width 1.6s cubic-bezier(0.16,1,0.3,1); width: 0; }
+    .sk-pct { font-family: var(--font-m); font-size: 0.75rem; color: var(--accent); font-weight: 500; }
+
+    /* CERT CARDS */
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+    .cert-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 28px;
+      transition: all var(--t); display: flex; gap: 18px; align-items: flex-start;
+    }
+    .cert-card:hover { border-color: var(--border-h); transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .cert-icon { font-size: 2.6rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .cert-name { font-family: var(--font-h); font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .cert-issuer { font-size: 0.82rem; color: var(--accent); margin-bottom: 8px; font-weight: 600; }
+    .cert-desc { font-size: 0.83rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 10px; }
+    .cert-issuer-old { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 8px; }
+    .cert-badge { display: inline-block; font-family: var(--font-m); font-size: 0.68rem; color: var(--accent); background: var(--glow-soft); border: 1px solid var(--border); padding: 2px 9px; border-radius: 20px; }
+
+    /* TOOLS */
+    .tools-wrap { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tool-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bg-3); border: 1px solid var(--border);
+      border-radius: 8px; padding: 10px 16px;
+      font-size: 0.9rem; color: var(--text-muted); font-weight: 500;
+      transition: all var(--t);
+    }
+    .tool-pill:hover { border-color: var(--border-h); color: var(--text); }
+    @media (max-width: 1024px) { .sk-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px)  { .sk-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px)  { .sk-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/logo-nav-dark.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-dark" /><img src="../images/logo-nav-light.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-light" /></a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link active">Skills</a></li><li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="icon-dark">🌙</span><span class="icon-light">☀️</span></button>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <span class="s-tag">Technical Expertise</span>
+    <h1>My <em>Skills</em></h1>
+    <p>A comprehensive toolkit covering full-stack development, ethical hacking, and network administration.</p>
+  </div></div>
+</section>
+
+<main class="skills-main">
+  <div class="container">
+    <div class="sk-categories">
+
+      <!-- FRONTEND -->
+      <div class="fi">
+        <h2 class="sk-cat-title">🖥️ Frontend Development</h2>
+        <div class="sk-grid">
+          <div class="sk-card"><div class="sk-icon">⚛️</div><div class="sk-name">React.js</div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div><div class="sk-pct">90%</div></div>
+          <div class="sk-card"><div class="sk-icon">▲</div><div class="sk-name">Next.js</div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><div class="sk-pct">80%</div></div>
+          <div class="sk-card"><div class="sk-icon">📜</div><div class="sk-name">JavaScript ES6+</div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">88%</div></div>
+          <div class="sk-card"><div class="sk-icon">🎨</div><div class="sk-name">Tailwind CSS</div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div><div class="sk-pct">87%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔷</div><div class="sk-name">TypeScript</div><div class="sk-bar"><div class="sk-fill" data-w="72"></div></div><div class="sk-pct">72%</div></div>
+          <div class="sk-card"><div class="sk-icon">🌐</div><div class="sk-name">HTML5 / CSS3</div><div class="sk-bar"><div class="sk-fill" data-w="94"></div></div><div class="sk-pct">94%</div></div>
+          <div class="sk-card"><div class="sk-icon">📱</div><div class="sk-name">Responsive Design</div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div><div class="sk-pct">92%</div></div>
+          <div class="sk-card"><div class="sk-icon">⚡</div><div class="sk-name">Context API / Hooks</div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">85%</div></div>
+        </div>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="fi">
+        <h2 class="sk-cat-title">⚙️ Backend Development</h2>
+        <div class="sk-grid">
+          <div class="sk-card"><div class="sk-icon">🟢</div><div class="sk-name">Node.js</div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div><div class="sk-pct">87%</div></div>
+          <div class="sk-card"><div class="sk-icon">🚂</div><div class="sk-name">Express.js</div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">88%</div></div>
+          <div class="sk-card"><div class="sk-icon">🐘</div><div class="sk-name">PHP 8</div><div class="sk-bar"><div class="sk-fill" data-w="86"></div></div><div class="sk-pct">86%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔴</div><div class="sk-name">Laravel</div><div class="sk-bar"><div class="sk-fill" data-w="84"></div></div><div class="sk-pct">84%</div></div>
+          <div class="sk-card"><div class="sk-icon">🍃</div><div class="sk-name">MongoDB</div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">85%</div></div>
+          <div class="sk-card"><div class="sk-icon">🐬</div><div class="sk-name">MySQL</div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div><div class="sk-pct">82%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔑</div><div class="sk-name">REST API / JWT</div><div class="sk-bar"><div class="sk-fill" data-w="89"></div></div><div class="sk-pct">89%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔗</div><div class="sk-name">Mongoose / Eloquent</div><div class="sk-bar"><div class="sk-fill" data-w="83"></div></div><div class="sk-pct">83%</div></div>
+        </div>
+      </div>
+
+      <!-- CYBERSECURITY -->
+      <div class="fi">
+        <h2 class="sk-cat-title">🔐 Cybersecurity (CEH Certified)</h2>
+        <div class="sk-grid">
+          <div class="sk-card"><div class="sk-icon">🎯</div><div class="sk-name">Penetration Testing</div><div class="sk-bar"><div class="sk-fill" data-w="86"></div></div><div class="sk-pct">86%</div></div>
+          <div class="sk-card"><div class="sk-icon">🕵️</div><div class="sk-name">Ethical Hacking</div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">85%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔍</div><div class="sk-name">Vulnerability Assessment</div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div><div class="sk-pct">87%</div></div>
+          <div class="sk-card"><div class="sk-icon">🌐</div><div class="sk-name">OWASP Top 10</div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">88%</div></div>
+          <div class="sk-card"><div class="sk-icon">📶</div><div class="sk-name">WiFi Security & Hacking</div><div class="sk-bar"><div class="sk-fill" data-w="84"></div></div><div class="sk-pct">84%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔒</div><div class="sk-name">Cryptography & PKI</div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div><div class="sk-pct">78%</div></div>
+          <div class="sk-card"><div class="sk-icon">💉</div><div class="sk-name">SQL Injection / XSS</div><div class="sk-bar"><div class="sk-fill" data-w="86"></div></div><div class="sk-pct">86%</div></div>
+          <div class="sk-card"><div class="sk-icon">🧰</div><div class="sk-name">Kali Linux / Metasploit</div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div><div class="sk-pct">82%</div></div>
+        </div>
+      </div>
+
+      <!-- NETWORKING -->
+      <div class="fi">
+        <h2 class="sk-cat-title">🌐 Computer Networking</h2>
+        <div class="sk-grid">
+          <div class="sk-card"><div class="sk-icon">📡</div><div class="sk-name">TCP/IP & OSI Model</div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">88%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔌</div><div class="sk-name">Cisco Routers & Switches</div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><div class="sk-pct">80%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔒</div><div class="sk-name">VPN Configuration</div><div class="sk-bar"><div class="sk-fill" data-w="79"></div></div><div class="sk-pct">79%</div></div>
+          <div class="sk-card"><div class="sk-icon">📶</div><div class="sk-name">VLAN & Subnetting</div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div><div class="sk-pct">82%</div></div>
+          <div class="sk-card"><div class="sk-icon">🛡️</div><div class="sk-name">Firewall / IDS / IPS</div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><div class="sk-pct">80%</div></div>
+          <div class="sk-card"><div class="sk-icon">☁️</div><div class="sk-name">AWS Advanced Networking</div><div class="sk-bar"><div class="sk-fill" data-w="76"></div></div><div class="sk-pct">76%</div></div>
+          <div class="sk-card"><div class="sk-icon">📊</div><div class="sk-name">Wireshark / Nmap</div><div class="sk-bar"><div class="sk-fill" data-w="83"></div></div><div class="sk-pct">83%</div></div>
+          <div class="sk-card"><div class="sk-icon">🔧</div><div class="sk-name">Network Troubleshooting</div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">85%</div></div>
+        </div>
+      </div>
+
+      <!-- TOOLS & DEVOPS -->
+      <div class="fi">
+        <h2 class="sk-cat-title">🛠️ Tools & DevOps</h2>
+        <div class="tools-wrap">
+          <div class="tool-pill"><span>🐳</span> Docker</div>
+          <div class="tool-pill"><span>🔀</span> Git / GitHub</div>
+          <div class="tool-pill"><span>☁️</span> AWS (EC2, S3, Lambda)</div>
+          <div class="tool-pill"><span>⚙️</span> CI/CD (GitHub Actions)</div>
+          <div class="tool-pill"><span>🔥</span> Firebase</div>
+          <div class="tool-pill"><span>🐧</span> Linux / Ubuntu Server</div>
+          <div class="tool-pill"><span>🌐</span> Nginx / Apache / cPanel</div>
+          <div class="tool-pill"><span>🧪</span> Jest / Testing</div>
+          <div class="tool-pill"><span>📦</span> npm / Composer</div>
+          <div class="tool-pill"><span>🔧</span> Postman / Thunder Client</div>
+          <div class="tool-pill"><span>🎨</span> Figma</div>
+          <div class="tool-pill"><span>💻</span> VS Code / PhpStorm</div>
+          <div class="tool-pill"><span>🌐</span> Vercel / Netlify</div>
+          <div class="tool-pill"><span>📁</span> CPanel Hosting</div>
+          <div class="tool-pill"><span>🌐</span> Web Hosting (Hostinger / SiteGround / cPanel)</div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="fi">
+        <h2 class="sk-cat-title">🏅 Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div>
+              <div class="cert-name">Certified Ethical Hacker (CEH)</div>
+              <div class="cert-issuer">Boston Institute of Analytics</div>
+              <div class="cert-desc">Penetration testing, OWASP Top 10, Kali Linux, Metasploit, web app security & vulnerability assessment.</div>
+              <div class="cert-badge">✅ Certified</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">⚛️</div>
+            <div>
+              <div class="cert-name">MERN Stack Development</div>
+              <div class="cert-issuer">UET Lahore</div>
+              <div class="cert-desc">React.js, Node.js, Express.js, MongoDB, JWT auth, REST APIs and full-stack cloud deployment.</div>
+              <div class="cert-badge">✅ Certified</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <div>
+              <div class="cert-name">Computer Network Assistant</div>
+              <div class="cert-issuer">NAVTTAC, Pakpattan</div>
+              <div class="cert-desc">TCP/IP, VLAN, VPN, Cisco routers & switches, firewall configuration and network troubleshooting.</div>
+              <div class="cert-badge">✅ Certified</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📶</div>
+            <div>
+              <div class="cert-name">WiFi Security & Hacking Techniques</div>
+              <div class="cert-issuer">Honhaar Jawan Program</div>
+              <div class="cert-desc">WPA2/WPA3 vulnerabilities, wireless pentesting, rogue APs and ethical WiFi security auditing.</div>
+              <div class="cert-badge">✅ Certified</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">☁️</div>
+            <div>
+              <div class="cert-name">AWS Certified Advanced Networking</div>
+              <div class="cert-issuer">Honhaar Jawan Program</div>
+              <div class="cert-desc">AWS VPC, Direct Connect, Transit Gateway, Route 53, CloudFront, WAF, Shield and cloud security.</div>
+              <div class="cert-badge">✅ Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-top">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/smag-logo-full.svg" alt="Syed Muhammad Ali Gillani" class="footer-logo-svg" /></a><p>Full Stack Developer · CEH Certified · Network Specialist</p></div>
+    <div class="footer-links">
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://github.com/m-ali-12" target="_blank">GitHub</a></li><li><a href="https://www.linkedin.com/in/m-ali-gillani/" target="_blank">LinkedIn</a></li><li><a href="https://wa.me/923025300069" target="_blank">WhatsApp</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Syed Muhammad Ali Gillani. All rights reserved.</p><p>Built with passion 💚</p></div>
+</div></footer>
+
+<script src="../js/main.js"></script>
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        e.target.querySelectorAll('.sk-fill[data-w]').forEach(b => b.style.width = b.dataset.w + '%');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

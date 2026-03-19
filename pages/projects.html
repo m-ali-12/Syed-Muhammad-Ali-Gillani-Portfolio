@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Syed Muhammad Ali Gillani — MoversLoader, PetroFlow, Desired Techs & More</title>
+  <meta name="description" content="Live projects by Syed Muhammad Ali Gillani: MoversLoader.com (US moving platform), RMJ Transport LLC, PetroFlow MERN app, What If Studio, Ecom by Bisma, Desired Techs. PHP Laravel & MERN Stack projects deployed in production." />
+  <meta name="keywords" content="Syed Muhammad Ali Gillani Projects, MoversLoader developer, PetroFlow MERN, Desired Techs PHP, RMJ Transport LLC, What If Studio, Ecom by Bisma, PHP Laravel projects Pakistan, MERN Stack projects Pakistan, Live web projects Pakistan, Full Stack Portfolio Pakistan, React projects Pakistan, Node.js projects Pakistan" />
+  <meta name="author" content="Syed Muhammad Ali Gillani" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://m-ali-gillani.dev/pages/projects.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://m-ali-gillani.dev/pages/projects.html" />
+  <meta property="og:title" content="Projects | Syed Muhammad Ali Gillani — 7+ Live Deployed Projects" />
+  <meta property="og:description" content="7+ live production projects by Ali Gillani: MoversLoader.com, PetroFlow, Desired Techs, What If Studio and more. PHP Laravel & MERN Stack." />
+  <meta property="og:image" content="https://m-ali-gillani.dev/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects | Syed Muhammad Ali Gillani" />
+  <meta name="twitter:description" content="7+ live production projects — MoversLoader, PetroFlow, Desired Techs, MERN & PHP Laravel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .proj-main { padding: 80px 0; }
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 44px; }
+    .f-btn {
+      font-family: var(--font-m); font-size: 0.75rem; font-weight: 500;
+      color: var(--text-muted); background: var(--bg-3); border: 1px solid var(--border);
+      padding: 7px 17px; border-radius: 8px; cursor: pointer;
+      transition: all var(--t); text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .f-btn.active, .f-btn:hover { color: var(--accent); background: var(--glow-soft); border-color: var(--border-h); }
+    .full-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 24px; }
+    .pc {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--r-lg); overflow: hidden; transition: all var(--t);
+    }
+    .pc:hover { border-color: var(--border-h); transform: translateY(-5px); box-shadow: 0 18px 52px rgba(0,0,0,0.36); }
+    .pc-img { aspect-ratio: 16/9; position: relative; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; overflow: hidden; }
+    .pi-1 { background: linear-gradient(135deg,#060f0a,#0a1e12); }
+    .pi-2 { background: linear-gradient(135deg,#060c14,#0a1828); }
+    .pi-3 { background: linear-gradient(135deg,#130614,#1e0a22); }
+    .pi-4 { background: linear-gradient(135deg,#0e0f06,#181e0a); }
+    .pi-5 { background: linear-gradient(135deg,#130a06,#221408); }
+    .pi-6 { background: linear-gradient(135deg,#06100e,#0a1e1a); }
+    .pi-7 { background: linear-gradient(135deg,#0a0614,#14082a); }
+    .pc-emoji { opacity: 0.18; }
+    .pc-ov {
+      position: absolute; inset: 0; background: rgba(0,0,0,0.85);
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      opacity: 0; transition: opacity var(--t);
+    }
+    .pc:hover .pc-ov { opacity: 1; }
+    .pc-lnk {
+      font-size: 0.84rem; font-weight: 800; text-decoration: none;
+      padding: 10px 18px; border-radius: 8px; transition: transform var(--t), box-shadow var(--t);
+    }
+    .pc-lnk.live { color: #000 !important; background: var(--accent); border: 2px solid var(--accent); }
+    .pc-lnk.live:hover { transform: scale(1.05); box-shadow: 0 4px 18px rgba(0,229,160,0.5); }
+    .pc-lnk.gh { color: #ffffff !important; background: rgba(255,255,255,0.18); border: 2px solid rgba(255,255,255,0.55); }
+    .pc-lnk.gh:hover { background: rgba(255,255,255,0.28); transform: scale(1.05); }
+    .pc-body { padding: 22px; }
+    .pc-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+    .pc-tags span { font-family: var(--font-m); font-size: 0.64rem; color: var(--accent); background: var(--glow-soft); border: 1px solid var(--border); padding: 2px 7px; border-radius: 20px; }
+    .pc-title { font-family: var(--font-h); font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
+    .pc-desc { font-size: 0.83rem; color: var(--text-muted); line-height: 1.62; margin-bottom: 14px; }
+    .pc-foot { display: flex; justify-content: space-between; align-items: center; }
+    .pc-live { font-family: var(--font-m); font-size: 0.68rem; color: var(--accent); }
+    .pc-live.wip { color: var(--text-muted); }
+    @media (max-width: 640px) { .full-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/logo-nav-dark.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-dark" /><img src="../images/logo-nav-light.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-light" /></a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="icon-dark">🌙</span><span class="icon-light">☀️</span></button>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <span class="s-tag">Live Work</span>
+    <h1>My <em>Projects</em></h1>
+    <p>Real, live projects deployed in production — from US moving platforms to petroleum systems.</p>
+  </div></div>
+</section>
+
+<main class="proj-main">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="f-btn active" data-filter="all">All</button>
+      <button class="f-btn" data-filter="mern">MERN Stack</button>
+      <button class="f-btn" data-filter="php">PHP / Laravel</button>
+      <button class="f-btn" data-filter="react">React / Next</button>
+    </div>
+
+    <div class="full-grid fi" id="pgrid">
+
+      <!-- 1 -->
+      <div class="pc" data-cat="php">
+        <div class="pc-img pi-1">
+          <span class="pc-emoji">🚛</span>
+          <div class="pc-ov">
+            <a href="https://moversloader.com/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+          <div class="pc-title">MoversLoader.com</div>
+          <div class="pc-desc">Full-featured moving & loading service marketplace connecting customers with professional movers across the United States. Complete booking system with admin panel.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="pc" data-cat="php">
+        <div class="pc-img pi-5">
+          <span class="pc-emoji">🏗️</span>
+          <div class="pc-ov">
+            <a href="https://rmjtransportllc.moversloader.com/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>PHP</span><span>MySQL</span><span>Sub-domain</span></div>
+          <div class="pc-title">RMJ Transport LLC</div>
+          <div class="pc-desc">Dedicated sub-platform for RMJ Transport LLC on the MoversLoader network — a branded transport service page with custom booking flow.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="pc" data-cat="php">
+        <div class="pc-img pi-2">
+          <span class="pc-emoji">⛽</span>
+          <div class="pc-ov">
+            <a href="https://petroleum.moversloader.com/index.php" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>PHP</span><span>MySQL</span><span>Admin Panel</span></div>
+          <div class="pc-title">Petroleum Management (PHP)</div>
+          <div class="pc-desc">Petroleum inventory and management system with admin dashboard. Track fuel transactions, inventory levels, and generate reports.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="pc" data-cat="mern">
+        <div class="pc-img pi-4">
+          <span class="pc-emoji">⛽</span>
+          <div class="pc-ov">
+            <a href="https://petro-flow.vercel.app/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Vercel</span></div>
+          <div class="pc-title">PetroFlow (MERN)</div>
+          <div class="pc-desc">Modern petroleum management and tracking system built with the full MERN stack. Real-time inventory, sales analytics, and role-based access control.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="pc" data-cat="react">
+        <div class="pc-img pi-3">
+          <span class="pc-emoji">🎨</span>
+          <div class="pc-ov">
+            <a href="https://what-if-studio.vercel.app/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>React</span><span>Next.js</span><span>Tailwind</span><span>Vercel</span></div>
+          <div class="pc-title">What If Studio</div>
+          <div class="pc-desc">Creative studio landing page with modern UI, smooth animations, fully responsive layout, and compelling content sections. Deployed on Vercel.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="pc" data-cat="react">
+        <div class="pc-img pi-6">
+          <span class="pc-emoji">🛍️</span>
+          <div class="pc-ov">
+            <a href="http://ecom-by-bisma.vercel.app/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>React</span><span>Vercel</span><span>E-Commerce</span></div>
+          <div class="pc-title">E-Commerce by Bisma</div>
+          <div class="pc-desc">Full-featured e-commerce frontend built with React — product listings, cart management, responsive design, and clean UI/UX deployed on Vercel.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="pc" data-cat="php">
+        <div class="pc-img pi-7">
+          <span class="pc-emoji">💡</span>
+          <div class="pc-ov">
+            <a href="https://www.desired-techs.com" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://www.desired-techs.com/d-t-admin/admin/login.php" target="_blank" rel="noopener" class="pc-lnk gh">Admin Panel</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>PHP</span><span>MySQL</span><span>cPanel</span><span>Admin</span></div>
+          <div class="pc-title">Desired Techs</div>
+          <div class="pc-desc">Tech company website with custom-built PHP admin panel for content management. Full backend CMS to manage pages, portfolio, and business content.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="pc" data-cat="react">
+        <div class="pc-img" style="background:linear-gradient(135deg,#0f0814,#1a0a2e);aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;font-size:3.5rem;overflow:hidden;">
+          <span style="opacity:0.18;">🎂</span>
+          <div class="pc-ov">
+            <a href="https://birthdaycelebration-seven.vercel.app/" target="_blank" rel="noopener" class="pc-lnk live">Live Demo →</a>
+            <a href="https://github.com/m-ali-12" target="_blank" rel="noopener" class="pc-lnk gh">GitHub</a>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-tags"><span>React</span><span>Animations</span><span>Vercel</span></div>
+          <div class="pc-title">Birthday Celebration App</div>
+          <div class="pc-desc">Interactive birthday celebration web app with beautiful animations, confetti effects, and a delightful user experience. Deployed on Vercel.</div>
+          <div class="pc-foot"><span class="pc-live">● Live</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-top">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/smag-logo-full.svg" alt="Syed Muhammad Ali Gillani" class="footer-logo-svg" /></a><p>Full Stack Developer · CEH Certified · Network Specialist</p></div>
+    <div class="footer-links">
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://github.com/m-ali-12" target="_blank">GitHub</a></li><li><a href="https://www.linkedin.com/in/m-ali-gillani/" target="_blank">LinkedIn</a></li><li><a href="https://wa.me/923025300069" target="_blank">WhatsApp</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Syed Muhammad Ali Gillani. All rights reserved.</p><p>Built with passion 💚</p></div>
+</div></footer>
+
+<script src="../js/main.js"></script>
+<script>
+  document.querySelectorAll('.f-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.pc').forEach(card => {
+        const show = f === 'all' || card.dataset.cat === f;
+        card.style.transition = 'opacity 0.3s, transform 0.3s';
+        card.style.opacity = show ? '1' : '0';
+        card.style.transform = show ? '' : 'scale(0.95)';
+        card.style.pointerEvents = show ? '' : 'none';
+        card.style.display = show ? '' : 'none';
+        if(show) setTimeout(() => { card.style.opacity='1'; card.style.transform=''; }, 10);
+      });
+    });
+  });
+</script>
+</body>
+</html>

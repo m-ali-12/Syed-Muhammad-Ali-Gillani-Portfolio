@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Syed Muhammad Ali Gillani — Full Stack Developer, CEH, MERN, Network & AWS Certified</title>
+  <meta name="description" content="Professional experience of Syed Muhammad Ali Gillani: 2+ years freelance Full Stack Developer (MERN + PHP Laravel), Computer Network Assistant NAVTTAC, CEH by Boston Institute of Analytics, MERN by UET Lahore, AWS Advanced Networking & WiFi Security by Honhaar Jawan." />
+  <meta name="keywords" content="Syed Muhammad Ali Gillani Experience, Ali Gillani work experience, Full Stack Developer experience Pakistan, Freelance MERN Developer, PHP Laravel experience, CEH Certified experience, Network Assistant NAVTTAC experience, AWS Networking experience, MoversLoader developer, Desired Techs developer" />
+    <meta property="og:image" content="https://m-ali-gillani.dev/og-image.png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Syed Muhammad Ali Gillani" />
+  <link rel="canonical" href="https://m-ali-gillani.dev/pages/experience.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .exp-main { padding: 80px 0; }
+    .exp-layout { display: grid; grid-template-columns: 1fr 1.9fr; gap: 72px; align-items: start; }
+    .exp-sidebar { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 18px; }
+    .stat-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 28px; }
+    .stat-box h3 { font-family: var(--font-h); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 22px; }
+    .sb-row { display: flex; justify-content: space-between; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--border); }
+    .sb-row:last-child { border-bottom: none; }
+    .sb-label { font-size: 0.84rem; color: var(--text-muted); }
+    .sb-val { font-family: var(--font-h); font-size: 1.35rem; font-weight: 800; color: var(--accent); }
+    .hl-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 24px; }
+    .hl-box h3 { font-family: var(--font-h); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px; }
+    .hl-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 13px; }
+    .hl-ic { width: 30px; height: 30px; background: var(--glow-soft); border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.85rem; }
+    .hl-t { font-size: 0.83rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* EXP CARDS */
+    .exp-cards { display: flex; flex-direction: column; gap: 24px; }
+    .exp-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 28px;
+      transition: all var(--t); position: relative;
+    }
+    .exp-card:hover { border-color: var(--border-h); transform: translateX(5px); box-shadow: 0 12px 40px rgba(0,0,0,0.28); }
+    .exp-card::before { content:''; position:absolute; left:-1px; top:24px; bottom:24px; width:3px; background:var(--accent); border-radius:0 2px 2px 0; opacity:0; transition:opacity var(--t); }
+    .exp-card:hover::before { opacity:1; }
+    .ec-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+    .ec-role { font-family: var(--font-h); font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .ec-company { font-size: 0.87rem; color: var(--accent); font-weight: 500; }
+    .ec-date { font-family: var(--font-m); font-size: 0.7rem; color: var(--text-muted); background: var(--bg-3); border: 1px solid var(--border); border-radius: 7px; padding: 5px 12px; white-space: nowrap; }
+    .ec-type { display: inline-block; font-family: var(--font-m); font-size: 0.66rem; color: var(--accent); background: var(--glow-soft); border: 1px solid var(--border); padding: 3px 9px; border-radius: 20px; margin-bottom: 10px; }
+    .ec-desc { font-size: 0.95rem; color: var(--text-body); line-height: 1.78; margin-bottom: 16px; }
+    .ec-list { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px; }
+    .ec-list li { font-size: 0.84rem; color: var(--text-muted); padding-left: 16px; position: relative; line-height: 1.6; }
+    .ec-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .ec-tech { display: flex; flex-wrap: wrap; gap: 7px; }
+    .ec-tech span { font-family: var(--font-m); font-size: 0.68rem; color: var(--text-muted); background: var(--bg-3); border: 1px solid var(--border); padding: 3px 9px; border-radius: 6px; }
+    @media (max-width: 900px) { .exp-layout { grid-template-columns: 1fr; gap: 36px; } .exp-sidebar { position: static; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/logo-nav-dark.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-dark" /><img src="../images/logo-nav-light.svg" alt="SMAG Logo" class="nav-logo-svg logo-svg-light" /></a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="experience.html" class="nav-link active">Experience</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="icon-dark">🌙</span><span class="icon-light">☀️</span></button>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <span class="s-tag">Career Journey</span>
+    <h1>Work <em>Experience</em></h1>
+    <p>2+ years of hands-on freelance and professional experience in web development, networking, and security.</p>
+  </div></div>
+</section>
+
+<main class="exp-main">
+  <div class="container">
+    <div class="exp-layout">
+
+      <div class="exp-sidebar fi">
+        <div class="stat-box">
+          <h3>At a Glance</h3>
+          <div class="sb-row"><span class="sb-label">Experience</span><span class="sb-val">2+ Yrs</span></div>
+          <div class="sb-row"><span class="sb-label">Live Projects</span><span class="sb-val">10+</span></div>
+          <div class="sb-row"><span class="sb-label">Certifications</span><span class="sb-val">5</span></div>
+          <div class="sb-row"><span class="sb-label">Technologies</span><span class="sb-val">15+</span></div>
+        </div>
+        <div class="hl-box">
+          <h3>Highlights</h3>
+          <div class="hl-item"><div class="hl-ic">🌍</div><div class="hl-t">US-based live client projects (MoversLoader, RMJ Transport)</div></div>
+          <div class="hl-item"><div class="hl-ic">🏅</div><div class="hl-t">5 professional certifications across dev, security & networking</div></div>
+          <div class="hl-item"><div class="hl-ic">🔐</div><div class="hl-t">CEH-certified — every app built with security-first mindset</div></div>
+          <div class="hl-item"><div class="hl-ic">🚀</div><div class="hl-t">10+ production-deployed projects available live online</div></div>
+        </div>
+      </div>
+
+      <div class="exp-cards fi">
+
+        <div class="exp-card">
+          <div class="ec-head">
+            <div><div class="ec-role">Freelance Full Stack Developer</div><div class="ec-company">Remote — International Clients (US, Pakistan)</div></div>
+            <div class="ec-date">2022 – Present</div>
+          </div>
+          <span class="ec-type">Freelance</span>
+          <p class="ec-desc">Delivering production-grade web applications for clients across the US and Pakistan. Specializing in MERN stack, PHP/Laravel, and custom CMS solutions.</p>
+          <ul class="ec-list">
+            <li>Built and deployed MoversLoader.com — a US-based moving service marketplace with full booking system and admin panel</li>
+            <li>Developed RMJ Transport LLC sub-platform on the MoversLoader network</li>
+            <li>Built PetroFlow — a MERN stack petroleum management system deployed on Vercel</li>
+            <li>Delivered What If Studio creative agency website with modern React/Next.js</li>
+            <li>Built Desired Techs company website with custom PHP admin panel CMS</li>
+            <li>Developed E-commerce store (ecom-by-bisma) with full React frontend</li>
+          </ul>
+          <div class="ec-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>PHP</span><span>MySQL</span><span>Laravel</span><span>Vercel</span><span>cPanel</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="ec-head">
+            <div><div class="ec-role">Computer Network Assistant</div><div class="ec-company">NAVTTAC, Pakpattan (Certified Training)</div></div>
+            <div class="ec-date">Certified</div>
+          </div>
+          <span class="ec-type">Certification + Practical</span>
+          <p class="ec-desc">Completed NAVTTAC-certified Computer Network Assistant program covering network design, configuration, administration, and security fundamentals.</p>
+          <ul class="ec-list">
+            <li>Network infrastructure setup, IP addressing, and subnetting</li>
+            <li>Router and switch configuration (Cisco IOS basics)</li>
+            <li>VPN setup, firewall configuration, and network security practices</li>
+            <li>VLAN configuration and network troubleshooting methodologies</li>
+            <li>DNS, DHCP, and Active Directory fundamentals</li>
+          </ul>
+          <div class="ec-tech"><span>TCP/IP</span><span>Cisco IOS</span><span>VPN</span><span>VLAN</span><span>Firewall</span><span>DNS/DHCP</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="ec-head">
+            <div><div class="ec-role">Cybersecurity — CEH Certified</div><div class="ec-company">Boston Institute of Analytics</div></div>
+            <div class="ec-date">Certified</div>
+          </div>
+          <span class="ec-type">Certification</span>
+          <p class="ec-desc">Earned CEH (Certified Ethical Hacker) certification from Boston Institute of Analytics, covering comprehensive ethical hacking and cybersecurity domains.</p>
+          <ul class="ec-list">
+            <li>Penetration testing methodologies and tools (Kali Linux, Metasploit)</li>
+            <li>Web application security — OWASP Top 10, SQL injection, XSS, CSRF</li>
+            <li>Network scanning, enumeration, and exploitation techniques</li>
+            <li>Social engineering, password attacks, and cryptography</li>
+            <li>Vulnerability assessment and security report writing</li>
+          </ul>
+          <div class="ec-tech"><span>Kali Linux</span><span>Metasploit</span><span>Wireshark</span><span>Nmap</span><span>Burp Suite</span><span>OWASP</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="ec-head">
+            <div><div class="ec-role">WiFi Security & AWS Networking</div><div class="ec-company">Honhaar Jawan Program (Government)</div></div>
+            <div class="ec-date">Certified</div>
+          </div>
+          <span class="ec-type">Dual Certification</span>
+          <p class="ec-desc">Completed two specialized certifications through the Honhaar Jawan government program: WiFi Security & Hacking Techniques and AWS Certified Advanced Networking.</p>
+          <ul class="ec-list">
+            <li>WiFi security protocols, WPA2/WPA3 vulnerabilities, and ethical WiFi hacking techniques</li>
+            <li>AWS advanced networking: VPC design, Direct Connect, Transit Gateway, Route 53</li>
+            <li>Cloud security groups, NACLs, and AWS Shield / WAF fundamentals</li>
+          </ul>
+          <div class="ec-tech"><span>WiFi Security</span><span>WPA2/3</span><span>AWS VPC</span><span>Route 53</span><span>CloudFront</span><span>AWS WAF</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="ec-head">
+            <div><div class="ec-role">MERN Stack Certified Developer</div><div class="ec-company">UET Lahore</div></div>
+            <div class="ec-date">Certified</div>
+          </div>
+          <span class="ec-type">Certification</span>
+          <p class="ec-desc">Completed professional MERN Stack Development certification from UET Lahore, covering the full JavaScript ecosystem from React frontend to Node/MongoDB backend.</p>
+          <ul class="ec-list">
+            <li>React.js with Hooks, Context API, and modern state management</li>
+            <li>Node.js + Express REST API development and JWT authentication</li>
+            <li>MongoDB schema design, aggregation, and Mongoose ORM</li>
+            <li>Full-stack deployment on cloud platforms and Vercel</li>
+          </ul>
+          <div class="ec-tech"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Vercel</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-top">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo" aria-label="Syed Muhammad Ali Gillani"><img src="../images/smag-logo-full.svg" alt="Syed Muhammad Ali Gillani" class="footer-logo-svg" /></a><p>Full Stack Developer · CEH Certified · Network Specialist</p></div>
+    <div class="footer-links">
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://github.com/m-ali-12" target="_blank">GitHub</a></li><li><a href="https://www.linkedin.com/in/m-ali-gillani/" target="_blank">LinkedIn</a></li><li><a href="https://wa.me/923025300069" target="_blank">WhatsApp</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Syed Muhammad Ali Gillani. All rights reserved.</p><p>Built with passion 💚</p></div>
+</div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
